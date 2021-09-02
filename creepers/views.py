@@ -21,13 +21,13 @@ class CreeperDetailView(DetailView):
 class CreeperCreateView(CreateView):
     template_name = "creeper/creeper-create.html"
     model = Creeper
-    fields = ['name', 'description', 'owner']
+    fields = ['name', 'description', 'survivability', 'added']
 
 
 class CreeperUpdateView(UpdateView):
     template_name = "creeper/creeper-update.html"
     model = Creeper
-    fields = ['name', 'description', 'owner']
+    fields = ['name', 'description', 'survivability',  'added']
 
 
 class CreeperDeleteView(DeleteView):

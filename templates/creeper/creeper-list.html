@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<a href="{% url 'creeper_create' %}">+ New Creeper</a>
-<ul>
+<h5><a href="{% url 'creeper_create' %}">👁‍🗨 New Creeper</a></h5>
+<ul class= "list">
   {% for creeper in object_list %}
   <li>
     <a href="{% url 'creeper_detail' creeper.pk %}">{{ creeper.name }}</a>
