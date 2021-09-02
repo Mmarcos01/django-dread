@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Details about {{ creeper.name }}</h2>
+<h2>Owner: {{ creeper.owner }}</h2>
+<p>{{ creeper.description }}</p>
+<a href="{% url 'creeper_update' creeper.pk %}">+ Update Creeper</a>
+<a href="{% url 'creeper_delete' creeper.pk %}">- Delete Creeper</a>
+
+{% endblock content %}

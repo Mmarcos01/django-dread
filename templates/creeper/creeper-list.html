@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<a href="{% url 'creeper_create' %}">+ New Creeper</a>
+<ul>
+  {% for creeper in object_list %}
+  <li>
+    <a href="{% url 'creeper_detail' creeper.pk %}">{{ creeper.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

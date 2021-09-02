@@ -119,6 +119,14 @@ Django = ">=2.2"
 sqlparse = ">=0.2.0"
 
 [[package]]
+name = "django-environ"
+version = "0.5.0"
+description = "Django-environ allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = ">=3"
+
+[[package]]
 name = "idna"
 version = "3.2"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -255,7 +263,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "a16a99d0bddf1fc62916dc3dc2680f3eb55e12170547d9a8a8b3e596ddff8779"
+content-hash = "084e807224f719c534b9a5de04ae8a2c2827312326b6375d6e96b31a7ceb42ea"
 
 [metadata.files]
 asgiref = [
@@ -349,6 +357,10 @@ django-crispy-forms = [
 django-debug-toolbar = [
     {file = "django-debug-toolbar-3.2.2.tar.gz", hash = "sha256:8c5b13795d4040008ee69ba82dcdd259c49db346cf7d0de6e561a49d191f0860"},
     {file = "django_debug_toolbar-3.2.2-py3-none-any.whl", hash = "sha256:d7bab7573fab35b0fd029163371b7182f5826c13da69734beb675c761d06a4d3"},
+]
+django-environ = [
+    {file = "django-environ-0.5.0.tar.gz", hash = "sha256:a8726675c1ebefa4706b36398c4d3c5c790d335ffe55c4a10378f6bfd57ad8d0"},
+    {file = "django_environ-0.5.0-py2.py3-none-any.whl", hash = "sha256:027797af03258931f16c5491cab32e6b386d52f041eb582f1e30f7b5abc22e04"},
 ]
 idna = [
     {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
