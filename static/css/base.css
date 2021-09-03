@@ -17,14 +17,14 @@ html {
 
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(58, 58, 58);
 }
 
 .container {
   max-width: 960px;
 }
 .container-max {
-  max-width: 500px;
+  max-width: 960px;
   margin: 0 auto;
   align-content: center;
   text-align: center;
@@ -58,14 +58,23 @@ body {
   font-family: 'Nosifer', cursive;
 }
 
-h2 {
+ul{
+  list-style-type: none;
+}
+
+h2, h4 {
   color: black;
+  margin: 30px 0;
 }
 
 p {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 h5 a {
   color: rgb(168, 22, 22);
+}
+
+form {
+  color:rgb(168, 22, 22);
 }

@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<h1>Delete a Creeper</h1>
+<h2>Delete a Creeper</h2>
 
 <form action="" method="POST">
   {% csrf_token %}
-  <p>Are you sure you want to delete "{creeper.name}"?</p>>
-  <input type="submit" value="OK">
+  <h2>{{creeper.name}} might not like that, are you sure?</h2>
+  <input type="submit" value="Axe 'em" style="margin-top: 80px;">
 </form>
 
 {% endblock content %}

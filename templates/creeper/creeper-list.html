@@ -2,7 +2,8 @@
 
 {% block content %}
 
-<h5><a href="{% url 'creeper_create' %}">👁‍🗨 New Creeper</a></h5>
+<div class="container-max" style="margin-top: 80px;">
+<h5><a href="{% url 'creeper_create' %}">👁‍🗨 Add a new Creeper</a></h5>
 <ul class= "list">
   {% for creeper in object_list %}
   <li>
@@ -10,5 +11,5 @@
   </li>
   {% endfor %}
 </ul>
-
+</div>
 {% endblock content %}
