@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Delete a Creeper</h2>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <h2>{{creeper.name}} might not like that, are you sure?</h2>
+  <input type="submit" value="Axe 'em" style="margin-top: 80px;">
+</form>
+
+{% endblock content %}

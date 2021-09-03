@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<div class="container-max" style="margin-top: 80px;">
+<h2>{{ creeper.name }}</h2>
+<p>{{ creeper.description }}</p>
+<h4>Survivability: {{ creeper.survivability }}</h4>
+
+<h5><a href="{% url 'creeper_update' creeper.pk %}">🔨 Update Creeper</a></h5>
+<h5><a href="{% url 'creeper_delete' creeper.pk %}">🪓 Delete Creeper</a></h5>
+</div>
+{% endblock content %}
